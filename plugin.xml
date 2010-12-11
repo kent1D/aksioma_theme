@@ -1,0 +1,12 @@
+<plugin>
+	<nom>Aksioma</nom>
+	<auteur>kent1 (kent1@arscenic.info)</auteur>
+	<licence><a href='http://creativecommons.org/licenses/by/2.5/' rel='licence'>Creative Commons Attribution 2.5 License</a></licence>
+	<version>1.1</version>
+ 	<description>Th&egrave;me Aksioma for [Aksioma.org->www.arksioma.org]</description>
+ 	<icon>icon_theme_defaut.jpg</icon>
+ 	<etat>stable</etat>
+ 	<prefix>theme</prefix>
+	<utilise id="Z" version="[1.2.0;]" />
+	<categorie>theme</categorie>
+</plugin>
