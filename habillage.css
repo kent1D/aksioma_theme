@@ -1,0 +1,325 @@
+body{
+	background-color:#666666;
+	font-family:Arial,Verdana;
+	font-size:.9em;
+	color:#000;
+	margin:0;
+}
+
+a, a.spip_out{
+	color:#000;
+	background:transparent;
+	padding:0;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+
+h3 a, h5 a, .menu a{
+	border:none;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+ul.spip{
+	list-style-type:square;
+	padding-left:10px;
+	margin-left:15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	background:#999;
+	font-size:1em;
+	margin:0;
+	padding:2px;
+	font-weight:bold;
+	color:#000;
+}
+
+div#page{
+	width:1250px;
+}
+div#entete{
+	width:1250px;
+	height:100px;
+	overflow:hidden;
+}
+
+div#entete .accueil{
+	width:854px;
+	height:100px;
+	background-color:#d40000;
+	float:left;
+}
+div#entete .accueil_bis{
+	width:396px;
+	height:100px;
+	background-color:blue;
+	float:right;
+}
+
+div#conteneur{
+	width:100%;
+	position:relative;
+	overflow:auto;
+}
+
+div#conteneur #navigation{
+	width:183px;
+	float:left;
+	text-align:right;
+}
+
+div#conteneur #navigation h2{
+	background-color:#333;
+	color:#fff;
+	margin-top:10px;
+}
+
+#navigation .navigation_extra li{
+	background: url(images/fle_gauche.png) top right no-repeat;
+	padding-top:16px;
+}
+#navigation .navigation_extra li>div{
+	background-color:#ccc;
+	font-size:.75em;
+	padding:0px 0 10px 0;
+}
+div#conteneur #contenu{
+	width:468px;
+	margin-left:10px;
+	float:left;
+}
+
+#contenu p{
+	font-size:.75em;
+}
+#contenu .cartouche{
+	overflow:auto;
+	margin:0;
+}
+
+.cartouche p{
+	clear:none;
+	margin:5px 10px;
+}
+
+#conteneur .cartouche > *{
+	margin-left:88px;
+}
+
+#conteneur .cartouche .spip_logos{
+	float:left;
+	margin:0;
+}
+
+#contenu .hentry{
+	overflow:auto;
+}
+
+#contenu .hentry .logo{
+	float:left;
+}
+
+#contenu .hentry .entry{
+	margin-left:183px;
+	padding:10px;
+}
+div#conteneur .contenu-principal,div#conteneur .notes{
+	background-color:#999999;
+	padding:10px;
+	margin:0;
+}
+div#conteneur #extra{
+	float:left;
+	margin-left:10px;
+	width: 566px;
+}
+
+#extra .extra-left{
+	float:left;
+	width:183px;
+}
+
+#extra .extra-left ul li{
+	font-size:.75em;
+	border-bottom:3px solid #ccc;
+	padding:5px 0;
+}
+.menu {
+	clear:none;
+}
+
+#navigation ul.menu-liste li{
+	background-color:#999999;
+	text-align:right;
+	margin:2px 0;
+	padding:2px;
+}
+
+#navigation ul.menu-liste li a{
+	color:#000;
+	font-weight:bold;
+	display:block;
+	border:none;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:1em;
+}
+
+#navigation ul.menu-liste li a:hover, #navigation ul.menu-liste li a.on{
+	color:#fff;
+}
+
+.menu{
+	padding-top:1.5em;
+}
+
+.formulaire_recherche label {
+	display:none;
+}
+
+.articles ul li.hentry{
+	background:#999;
+}
+
+#formulaire_recherche input {
+	font-size:1em;
+	border:none;
+}
+
+#formulaire_recherche input.text{
+	background:#ccc;
+	padding:4px;
+	width:8em;
+}
+
+#formulaire_recherche input.submit{
+	padding:4px 10px;
+	background:#ccc;
+	color:#000;
+}
+
+h2{
+	background:#333333;
+	color:#fff;
+}
+
+#conteneur h1{
+	background:#fff;
+	color:#0000cc;
+}
+
+#conteneur h2{
+	background:#fff;
+	color:#0000cc;
+	padding-left:30px;
+}
+
+div.texte p{
+	margin:.5em 0;
+}
+
+.focus{
+	margin-top:1.5em;
+	background-color:#cccccc;
+	text-align:right;
+}
+
+div.focus ul{
+	padding:5px;
+}
+
+div.focus h5{
+	background:transparent;
+	padding:0;
+	font-size:.9em;
+}
+
+.liste ul{
+	margin:5px 0;
+}
+
+.liste ul li{
+	margin:1em 0;
+}
+
+.liste ul ul li{
+	margin:.2em 0;
+}
+
+.chapo, .texte{
+	margin:5px;
+	color:#000;
+	clear:both;
+}
+
+h3.spip{
+	text-align:left;
+}
+
+.notes{
+	margin:10px;
+}
+
+.page_article #conteneur h1{
+	background:transparent;
+	color:#000;
+	font-size:1.1em;
+	margin:0 0 10px 88px;
+}
+
+.page_article .soustitre{
+	color:#0000CC;
+	font-size:1.2em;
+	text-transform:none;
+	letter-spacing:0;
+}
+
+/**
+ * Crayons
+ */
+
+.crayon-html{
+	padding:5px;
+	background-color:#fff;
+	border:1px #solid #ccc;
+	font-size:.9em;
+}
+
+.crayon-html li.fieldset{
+	padding:5px;
+}
+
+/**
+ * Calendrier
+ */
+#calendar{
+	width:100%;
+}
+#calendar caption{
+	background-color:#333;
+	color:#fff;
+}
+#calendar table{
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+}
+#calendar thead{
+	background-color:#e4e4e4;
+	border-bottom:#b6b6b6;
+}
+#calendar tbody{
+	background-color:#fff;
+}
+#calendar caption a{
+	color:#fff;
+}
