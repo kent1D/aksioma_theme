@@ -43,6 +43,44 @@ h1, h2, h3, h4, h5, h6 {
 	color:#000;
 }
 
+#menu_lang{
+	margin-bottom:10px;
+	text-align:right;
+	overflow:hidden;
+}
+
+#menu_lang a,#menu_lang strong{
+	display:block;
+	width:16px;
+	height:11px;
+	color:transparent;
+	float:right;
+	padding:2px;
+}
+#menu_lang a.langue_en{
+	background:url(images/flags/gb.png) no-repeat;
+}
+
+#menu_lang a.langue_it{
+	background:url(images/flags/it.png) no-repeat;
+}
+
+#menu_lang a.langue_sl{
+	background:url(images/flags/si.png) no-repeat;
+}
+
+#menu_lang strong.langue_en{
+	background:url(images/flags/gb_on.png) no-repeat;
+}
+
+#menu_lang strong.langue_it{
+	background:url(images/flags/it_on.png) no-repeat;
+}
+
+#menu_lang strong.langue_sl{
+	background:url(images/flags/si_on.png) no-repeat;
+}
+
 div#page{
 	width:1250px;
 }
@@ -186,8 +224,10 @@ div#conteneur #extra{
 	display:none;
 }
 
-.articles ul li.hentry{
+#contenu ul.liste-items li{
 	background:#999;
+	padding: 10px;
+	margin:10px 0;
 }
 
 #formulaire_recherche input {
@@ -276,13 +316,6 @@ h3.spip{
 	margin:0 0 10px 88px;
 }
 
-.page_article .soustitre{
-	color:#0000CC;
-	font-size:1.2em;
-	text-transform:none;
-	letter-spacing:0;
-}
-
 /**
  * Crayons
  */
@@ -303,10 +336,14 @@ h3.spip{
  */
 #calendar{
 	width:100%;
+	margin-top:20px;
 }
+
 #calendar caption{
 	background-color:#333;
+	padding:3px 0;
 	color:#fff;
+	font-size:.8em;
 }
 #calendar table{
 	width:100%;
@@ -322,4 +359,16 @@ h3.spip{
 }
 #calendar caption a{
 	color:#fff;
+}
+#calendar td.occupe{
+	padding:1px;
+}
+
+#calendar td.occupe a{
+	display:block;
+	border:1px solid #d40000;
+}
+
+#calendar td.occupe a:hover{
+	background-color:#d40000;
 }
