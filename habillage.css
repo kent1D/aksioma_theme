@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 	background:#999;
 	font-size:1em;
 	margin:0;
-	padding:2px;
+	padding:2px 0;
 	font-weight:bold;
 	color:#000;
 }
@@ -137,25 +137,17 @@ div#conteneur #contenu{
 }
 
 #contenu p{
-	font-size:.75em;
-}
-#contenu .cartouche{
-	overflow:auto;
-	margin:0;
+	font-size:.9em;
 }
 
 .cartouche p{
 	clear:none;
-	margin:5px 10px;
-}
-
-#conteneur .cartouche > *{
-	margin-left:88px;
+	margin:5px 0;
 }
 
 #conteneur .cartouche .spip_logos{
 	float:left;
-	margin:0;
+	margin:0 10px 5px -10px;
 }
 
 #contenu .hentry{
@@ -176,12 +168,11 @@ div#conteneur .contenu-principal,div#conteneur .notes{
 	margin:0;
 }
 
+
 .page_rubrique div#conteneur .contenu-principal{
 	padding:0;
 }
-.page_rubrique #conteneur .cartouche > *{
-	margin-left:0;
-} 
+
 div#conteneur #extra{
 	float:left;
 	margin-left:10px;
@@ -211,6 +202,10 @@ div#conteneur #extra{
 	background-color:transparent;
 	margin-left:58px;
 	color:#fff;
+}
+
+.extra-right > div{
+	margin-bottom:10px;
 }
 .menu {
 	clear:none;
@@ -297,7 +292,9 @@ h2{
 }
 
 div.texte p{
-	margin:.5em 0;
+	margin:.8em 0;
+	line-height:1.5em;
+	font-size:1.1em;
 }
 
 .focus{
@@ -328,14 +325,11 @@ div.focus h5{
 	margin:.2em 0;
 }
 
-.chapo, .texte{
-	margin:5px;
-	color:#000;
-	clear:both;
-}
-
 h3.spip{
 	text-align:left;
+	padding:1em 0 .3em 0;
+	font-size:1.1em;
+	border-bottom:1px solid #ccc;
 }
 
 .notes{
@@ -346,7 +340,6 @@ h3.spip{
 	background:transparent;
 	color:#000;
 	font-size:1.1em;
-	margin:0 0 10px 88px;
 }
 
 /**
