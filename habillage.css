@@ -168,7 +168,6 @@ div#conteneur .contenu-principal,div#conteneur .notes{
 	margin:0;
 }
 
-
 .page_rubrique div#conteneur .contenu-principal{
 	padding:0;
 }
@@ -197,6 +196,36 @@ div#conteneur #extra{
 	background-color:#333333;
 }
 
+ul.menu-liste.social{
+	overflow:hidden;
+}
+
+.menu-liste.social li{
+	float:right;
+}
+.menu-liste.social li a{
+	display:block;
+	width:30px;
+	height:30px;
+	margin:8px 3px;
+	color:transparent;	
+}
+
+.icone_fb{
+	background:url(images/social/facebook.png) no-repeat center center;
+}
+
+.icone_twitter{
+	background:url(images/social/twitter.png) no-repeat center center;
+}
+
+.icone_rss{
+	background:url(images/social/rss.png) no-repeat center center;
+}
+
+.icone_flickr{
+	background:url(images/social/flickr.png) no-repeat center center;
+}
 .extra-right h4{
 	margin-top:10px;
 	background-color:transparent;
