@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #menu_lang{
-	margin-bottom:10px;
+	padding:5px;
 	text-align:right;
 	overflow:hidden;
 }
@@ -106,7 +106,7 @@ div#entete .accueil_bis{
 div#conteneur{
 	width:100%;
 	position:relative;
-	overflow:auto;
+	overflow:hidden;
 }
 
 div#conteneur #navigation{
@@ -175,10 +175,17 @@ div#conteneur .contenu-principal,div#conteneur .notes{
 	padding:10px;
 	margin:0;
 }
+
+.page_rubrique div#conteneur .contenu-principal{
+	padding:0;
+}
+.page_rubrique #conteneur .cartouche > *{
+	margin-left:0;
+} 
 div#conteneur #extra{
 	float:left;
 	margin-left:10px;
-	width: 566px;
+	width:579px;
 }
 
 #extra .extra-left{
@@ -191,18 +198,44 @@ div#conteneur #extra{
 	border-bottom:3px solid #ccc;
 	padding:5px 0;
 }
+
+#extra .extra-right{
+	float:left;
+	width:386px;
+	margin-left:10px;
+	background-color:#333333;
+}
+
+.extra-right h4{
+	margin-top:10px;
+	background-color:transparent;
+	margin-left:58px;
+	color:#fff;
+}
 .menu {
 	clear:none;
 }
 
+#extra h3{
+	padding-left:24px;
+	background:#999 url(images/fle_droite.png) no-repeat 2px center;
+}
 #navigation ul.menu-liste li{
-	background-color:#999999;
 	text-align:right;
 	margin:2px 0;
-	padding:2px;
 }
 
-#navigation ul.menu-liste li a{
+#navigation ul.menu-liste li ul{
+	font-size:.85em;
+}
+#navigation ul.menu-liste li.on > a,#navigation ul.menu-liste li strong.on{
+	color:#666;
+	background-color:#ccc;
+}
+#navigation ul.menu-liste li a,#navigation ul.menu-liste li strong{
+	display:block;
+	background-color:#999999;
+	padding:2px;
 	color:#000;
 	font-weight:bold;
 	display:block;
@@ -371,4 +404,66 @@ h3.spip{
 
 #calendar td.occupe a:hover{
 	background-color:#d40000;
+}
+/**
+ * Carousel
+ */
+.extra-right .menu{
+	position:relative;
+}
+
+.caroufredsel_wrapper{
+	margin:10px 56px;
+}
+.caroufredsel_wrapper ul {
+	margin: 50px 0 0 60px;
+}
+.caroufredsel_wrapper ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.caroufredsel_wrapper li {
+	font-size: 40px;
+	color: #666;
+	text-align: center;
+	width: 78px;
+	height:110px;
+	padding: 0;
+	margin: 6px;
+	display: block;
+	float: left;
+	/*background-color: #f0f0f0;
+	border: 5px solid #ccc;*/
+}
+.extra-right .menu{
+	padding:0;
+}
+.extra-right .menu .prev {
+	position:absolute;
+	left:13px;
+	top:20px;
+	width:30px;
+	height:71px;
+	background:url(images/fle_gauche_carousel.png) no-repeat;
+	color:transparent;
+}
+
+.extra-right .menu .prev:hover{
+	background:url(images/fle_gauche_carousel_hover.png) no-repeat;
+}
+
+.extra-right .menu .next {
+	position:absolute;
+	right:13px;
+	top:20px;
+	width:30px;
+	height:71px;
+	background:url(images/fle_droite_carousel.png) no-repeat;
+	color:transparent;
+}
+
+.extra-right .menu .next:hover{
+	background:url(images/fle_droite_carousel_hover.png) no-repeat;
 }
