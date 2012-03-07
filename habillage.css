@@ -35,6 +35,10 @@ ul.spip,p,div.spip{
 .rubrique_liste_content .texte p{
 	padding-left:80px;
 }
+
+.rubrique_liste_content .texte p > .spip_documents{
+	margin-left:-80px;
+}
 ul{
 	margin:0;
 	padding:0;
@@ -232,14 +236,20 @@ div#conteneur #extra{
 	width:183px;
 }
 
-#extra .extra-left ul li p{
+#extra .extra-left ul li{
 	padding:2px 0;
+}
+#extra .extra-left ul li .spip_logos{
+	margin-bottom:5px;
+}
+#extra .extra-left ul li p{
+	padding:0;
 	margin:0;
+	line-height: 1.3em;
 }
 #extra .extra-left ul li{
-	font-size:.9em;
-	border-bottom:3px solid #ccc;
-	padding:3px 0;
+	border-bottom:3px solid #999;
+	padding:8px 0;
 }
 
 #extra .extra-right{
@@ -354,7 +364,6 @@ ul.social li:last-child{
 	display:block;
 	background-color:#999999;
 	padding:2px;
-	color:#000;
 	font-weight:bold;
 	display:block;
 	border:none;
@@ -365,6 +374,7 @@ ul.social li:last-child{
 
 #extra .extra-left ul li a{
 	background:none;
+	padding:0;
 }
 #navigation ul.submenu_left li a,#navigation ul.submenu_left li strong{
 	background-color:transparent;
@@ -385,6 +395,11 @@ ul.social li:last-child{
 	background:#999;
 	padding: 10px;
 	margin:0;
+}
+
+.page_sommaire #contenu ul.liste-items > li{
+	margin: 0 0 10px;
+    padding: 10px 5px;
 }
 
 .formulaire_spip{
@@ -760,7 +775,7 @@ table.spip th, table.spip td {
 	border:non;
 }
 
-table.spip{width:100%;border:none;font-size: .9em;}
+table.spip{width:100%;border:none;font-size: .8em;}
 
 table.spip tr.row_even,table.spip tr.row_odd{border:none;background:transparent;}
 
@@ -823,6 +838,9 @@ body.article_text_online{background-color:#F5F5F5}
  * Page sommaire
  */
 
+.page_sommaire .liste-items{
+	background-color:#666;
+}
 .page_sommaire .liste-items li .surtitre{
 	background:transparent url(images/fle_droite.gif) no-repeat 2px 50%;
 	padding-left: 24px;
