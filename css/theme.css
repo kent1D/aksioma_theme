@@ -1,3 +1,71 @@
+/* SPIP-STYLE                                                           */
+/* Cette feuille contient les styles associes au code genere par SPIP.  */
+/* Ces styles sont indispensables et doivent necessairement etre        */
+/* definis pour le bon fonctionnement de vos squelettes.                */
+
+
+/* Intertitre */
+h3.spip { /* text-align: center; margin-top: 2em; margin-bottom: 1.4em; font-size: 1.15em; font-weight: bold;*/ }
+hr.spip { margin: 2em auto; }
+
+/* Listes SPIP */
+ul.spip {}
+ol.spip { list-style: decimal; }
+
+/* Citations, code et poesie */
+blockquote.spip { margin: 2em 0; padding-left: 1em; border-left: 0.30em solid; }
+blockquote.spip_poesie { margin: 2em 0; padding-left: 1em; border-left: 1px solid; font-family: Garamond, Georgia, Times, serif; font-size:120%; }
+blockquote.spip_poesie div { text-indent: -3em; margin-left: 3em; }
+
+.spip_code, .spip_cadre { font-family: Courier, "Courier New", monospace; color: #009; }
+.spip_cadre {  background-color: #F4F8F8; border: 1px inset; }
+div.spip_code, .spip_cadre { margin-bottom: 1em;  }
+
+.spip_surligne { background: #FF6; }
+
+/* Tableaux */
+table.spip { margin-right: auto; margin-left: auto; margin-bottom: 1em; border-collapse: collapse; border-spacing: 0; line-height: normal; }
+table.spip caption { caption-side: top; /* bottom pas pris en compte par IE */ text-align: center; margin-right: auto; margin-left: auto; font-weight: bold; }
+table.spip tr.row_first { background: #FFC; }
+table.spip tr.row_odd { background: #EEE; }
+table.spip tr.row_even { background: #DDD; }
+table.spip th, table.spip td { padding: 0.20em 0.40em; text-align: left; border: 1px solid; }
+table.spip th { vertical-align: bottom; font-weight: bold; }
+table.spip td { vertical-align: top; }
+
+/* Logos, documents et images */
+img, .spip_logos { margin: 0; padding: 0; border: 0; }
+.spip_documents { text-align: center; line-height: normal; }
+.spip_documents p { margin: 0.10em; padding: 0; }
+.spip_documents_center { display: block;display: table; clear: both; margin: 1em auto; }
+.spip_documents_left { float: left; margin-right: 15px; margin-bottom: 5px; }
+.spip_documents_right { float: right; margin-left: 15px; margin-bottom: 5px; }
+.spip_doc_titre { margin-right: auto; margin-left: auto; font-weight: bold; font-size: 0.90em; }
+.spip_doc_descriptif { clear: both; margin-right: auto; margin-left: auto; font-size: 0.90em; }
+
+/* modeles par defaut */
+.spip_modele { float: right; display: block; padding: 1em; border: 1px solid; width: 180px; }
+
+/* Couleurs des liens de SPIP */
+a.spip_note {} /* liens vers notes de bas de page */
+a.spip_ancre {} /* liens internes a la page */
+a.spip_in { color: #900; } /* liens internes */
+a.spip_out { color: #009;  } /* liens sortants */
+a.spip_url { color: #009; } /* liens url sortants */
+a.spip_glossaire { color: #060;  } /* liens vers encyclopedie */
+a.spip_glossaire:hover { text-decoration: underline overline; }
+
+.on,.on a,a.on { font-weight: bold; } /* liens exposes */
+
+.small {font-size:90%;}
+
+/* Espaceur de blocs */
+.nettoyeur { clear: both; height: 0; margin: 0; padding: 0; border: 0; line-height: 1px; font-size: 1px; }
+
+/* Non visible a l'ecran */
+.invisible { position: absolute; top: -3000em; height: 1%; }
+
+
 body{
 	background-color:#666666;
 	font-family:Arial,Verdana;
@@ -25,7 +93,7 @@ h3 a, h5 a, .menu a{
 ul.spip,p,div.spip{
 	margin:.8em 0;
 	line-height:1.5em;
-	font-size:.8em;
+	font-size:.9em;
 }
 
 .texte a {
@@ -207,9 +275,14 @@ div#conteneur #contenu{
 #contenu .hentry{
 	overflow:auto;
 }
-
+.extra-left > a .spip_logos{
+	width:100%;
+	height:auto;
+	
+}
 #contenu .hentry .logo{
-	width:39%;
+	width:38%;
+	height:auto;
 	display:inline-block;
 	vertical-align:top;
 }
@@ -415,7 +488,7 @@ ul.social li:last-child{
 	background-color:transparent;
 	color:#fff;
 	font-weight:normal;
-	font-size:.8em;
+	font-size:.9em;
 }
 
 #navigation ul.menu-liste li a:hover, #navigation ul.menu-liste li a.on{
@@ -564,7 +637,7 @@ h3.spip{
 #calendar{
 	width:100%;
 	margin:8% 0;
-	font-size:.8em;
+	font-size:.9em;
 	margin-bottom:0;
 }
 
@@ -651,7 +724,7 @@ h3.spip{
 	text-align: center;
 	padding: 0;
 	margin: 6px;
-	font-size:.8em;
+	font-size:.9em;
 	display: block;
 	float: left;
 }
@@ -748,7 +821,7 @@ p.pagination .sep{display:none;}
 }
 
 #pied{
-	font-size:.8em;
+	font-size:.9em;
 	color:#fff;
 	background-color:#000;
 	padding:3px;
@@ -823,7 +896,7 @@ table.spip th, table.spip td {
 	border:non;
 }
 
-table.spip{width:100%;border:none;font-size: .8em;}
+table.spip{width:100%;border:none;font-size: .9em;}
 
 table.spip tr.row_even,table.spip tr.row_odd{border:none;background:transparent;}
 
@@ -1191,10 +1264,7 @@ table.spip_barre input.barre { width: 99%; background: transparent; border: 0; c
 
 /* Formulaires de recherche (site / petitions) */
 .formulaire_recherche { margin: 0; padding: 0; background: none; }
-.formulaire_recherche * { display: inline; vertical-align: middle; }
-.formulaire_recherche label {}
-.formulaire_recherche input.text { width: 10em; padding-left: 25px; background: #FFF; }
-.formulaire_recherche input.submit {}
+.formulaire_recherche * { display: inline; vertical-align: bottom; }
 
 .spip_surligne {} /* Cf.: spip_style.css */
 
