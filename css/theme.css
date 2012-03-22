@@ -12,6 +12,9 @@ hr.spip { margin: 2em auto; }
 ul.spip {}
 ol.spip { list-style: decimal; }
 
+img{
+	vertical-align:bottom;
+}
 /* Citations, code et poesie */
 blockquote.spip { margin: 2em 0; padding-left: 1em; border-left: 0.30em solid; }
 blockquote.spip_poesie { margin: 2em 0; padding-left: 1em; border-left: 1px solid; font-family: Garamond, Georgia, Times, serif; font-size:120%; }
@@ -719,12 +722,11 @@ h3.spip{
 	list-style: none;
 	display: block;
 }
-.caroufredsel_wrapper li,.page_rubrique #extra .caroufredsel_wrapper ul li {
+.caroufredsel_wrapper li,
+.page_rubrique #extra .caroufredsel_wrapper ul li {
 	color: #666;
 	text-align: center;
-	padding: 0;
-	margin: 6px;
-	font-size:.9em;
+	padding: 6px;
 	display: block;
 	float: left;
 }
@@ -781,7 +783,6 @@ h3.spip{
 .menu .next:hover{
 	background:url(images/fle_carousel_sprite_big.png) no-repeat -255px -71px;
 }
-
 
 .spip_documents{
 	text-align:left;
@@ -870,8 +871,7 @@ ul.liste_rubriques li{padding:3px 0;}
 }
 
 .rubrique_brochures .caroufredsel_wrapper{
-	margin: 10px 56px;
-	margin:2% 60px;
+	margin:0 60px;
 	width:100%;
 }
 .rubrique_brochures .caroufredsel_wrapper li{
@@ -880,16 +880,6 @@ ul.liste_rubriques li{padding:3px 0;}
 	margin:6px;
 }
 
-.caroufredsel_wrapper li img{
-	vertical-align:bottom;
-}
-.rubrique_brochures .caroufredsel_wrapper li p{
-	margin:.2em 0;
-}
-
-.rubrique_brochures .caroufredsel_wrapper li a {
-	
-}
 .rubrique_brochures .menu .prev,.rubrique_brochures .menu .next {top:140px};
 
 table.spip th, table.spip td {
@@ -965,6 +955,14 @@ body.article_text_online{background-color:#F5F5F5}
 	padding-left: 24px;
 }
 
+.dsjcycle,.dsjcycle > div{
+	max-width:100%;
+}
+
+.dsjcycle > div img{
+	width:100%;
+	height:auto;
+}
 .dsjcycle div:nth-child(1n+2){
 	display:none;
 }
@@ -1065,7 +1063,7 @@ smaller than 800
 	}
 	div#conteneur #contenu{
 		margin-left:2%;
-		width: 68%;
+		width: 63%;
 	}
 	
 	.rubrique_brochures #conteneur #contenu{
@@ -1076,8 +1074,7 @@ smaller than 800
 		display:none;
 	}
 	div#conteneur #navigation{
-		width:25%;
-		margin-left:2%; 
+		width:35%; 
 	}
 	
 	div#conteneur #extra{
@@ -1174,108 +1171,4 @@ smaller than 480
 }
 
 
-/*  ------------------------------------------
-/*  Habillage des formulaires
-/*  ------------------------------------------ */
-input, select, textarea { font-size: 100%; font-family: inherit; }
 
-
-/* Structure generale des formulaires
------------------------------------------------ */
-.formulaire_spip { clear: both; margin-bottom: 2em; padding: 0; border: 0; text-align: left; font-size: 1em; }
-.formulaire_spip form { margin: 0; padding: 0; } /* Bug IE/Win */
-
-/* Fieldset */
-.formulaire_spip fieldset { clear: both; margin: 0 0 1em 0; border: 0; }
-.formulaire_spip fieldset legend { margin: 0; padding: 0; font-size: 1.05em; font-weight: bold; background-color: #fff; color: #333; } /* Preciser la couleur des legend et du fond pour IE/Win */
-.formulaire_spip fieldset fieldset { margin-top: 1em; }
-.formulaire_spip fieldset fieldset legend { font-size: 1em; font-weight: normal; }
-
-/* Explications */
-.formulaire_spip .explication { margin: 0.50em 0; color: #444; }
-
-/* Lignes */
-.formulaire_spip ul { margin: 0; padding: 0; list-style: none; }
-.formulaire_spip ul li { clear: both; margin: 0; padding: 0.50em 0; }
-
-/* Labels */
-.formulaire_spip label { display: block; text-align: left; color: #444; font-weight: bold; /* pour IE/Win */ position: relative;  }
-.formulaire_spip li p { margin-top: 0; margin-bottom: 0; }
-
-.formulaire_spip .choix label{display:inline;font-weight:normal;}
-.formulaire_spip .choix input.radio,
-.formulaire_spip .choix input.checkbox {width:auto;}
-
-
-/* Champs de saisie */
-.formulaire_spip input.text { width: 15em; }
-.formulaire_spip textarea { width: 99%;}
-.formulaire_spip select { width: 99%; }
-
-/* Boutons */
-.formulaire_spip .boutons { clear: both; margin: 0; padding: 0; text-align: right; }
-.formulaire_spip .boutons input { margin-left: 1em; }
-.formulaire_spip .boutons input, input.submit {}
-
-
-/* Reponses, previsu et erreurs
------------------------------------------------ */
-
-/* Champs obligatoires */
-.formulaire_spip li.obligatoire {}
-.formulaire_spip li.obligatoire label {}
-
-/* Previsualisation du message */
-.formulaire_spip fieldset.previsu { margin-bottom: 2em; padding: 1em; border: 2px dashed #F57900; }
-.formulaire_spip fieldset.previsu legend { padding: 0 0.50em; font-weight: bold; color: #F57900; }
-.formulaire_spip fieldset.previsu li { padding: 3px; border: none; }
-.formulaire_spip fieldset.previsu p { margin: 1em 0; } 
-
-/* Reponse du formulaire */
-.reponse_formulaire { font-weight: bold; color: #e86519; font-size: 1.20em; }
-fieldset.reponse_formulaire { border-color: #e86519; font-weight: normal; }
-fieldset.reponse_formulaire.reponse_formulaire legend { color: #F57900; } /* Preciser la couleur des legend et du fond pour IE/Win */
-
-/* * Erreurs */
-.formulaire_spip li.erreur .erreur_message { display: block; color: #C30; font-weight: bold; }
-.formulaire_spip li.erreur input.text, .formulaire_spip li.erreur textarea { background-color: #FCC; border-style: solid; border-color: #C30; }
-.reponse_formulaire_erreur { margin: 0; color: #C30; font-weight: bold; }
-
-/* * OK */
-.reponse_formulaire_ok { margin: 0; color: #53AD20; font-weight: bold; }
-
-
-/* Variantes et cas particuliers
------------------------------------------------ */
-
-/* Barre de raccourcis typographiques */
-table.spip_barre { width: 100%; }
-table.spip_barre a img { background: #FDA; padding: 3px; border: 1px outset #CC9; }
-table.spip_barre a:focus img,
-table.spip_barre a:hover img,
-table.spip_barre a:active img { background: #FFF; border: 1px solid #CC9; }
-table.spip_barre input.barre { width: 99%; background: transparent; border: 0; color:inherit; }
-
-/* Formulaire de forum */
-.formulaire_forum .saisie_titre input.text, .formulaire_forum .saisie_titre textarea { width: 98%; }
-
-/* Selection des langues */
-.formulaire_menu_lang { margin: 0; padding: 0; background: none; }
-
-/* Formulaires de recherche (site / petitions) */
-.formulaire_recherche { margin: 0; padding: 0; background: none; }
-.formulaire_recherche * { display: inline; vertical-align: bottom; }
-
-.spip_surligne {} /* Cf.: spip_style.css */
-
-/* Choix des mots-clefs */
-ul.choix_mots { display: block; margin: 0; padding: 0; list-style: none; }
-ul.choix_mots li { clear: none; float: left; display: block; width: 30%; padding: 1%; }
-ul.choix_mots li label { display: inline; font-weight: normal; }
-
-.formulaire_spip .bugajaxie { display: none; } /* Bug IE/Win */
-
-/* Formulaire de login dans une page */
-.formulaire_login ul li {clear:left;}
-.formulaire_login .editer_password .details {display:block;}
-.formulaire_login #spip_logo_auteur {float:right;}
