@@ -739,6 +739,10 @@ h3.spip{
 	padding:6px;
 }
 
+.rubrique_brochures #contenu ul.liste li a,
+.extra-right ul.liste li a{
+	display:block;
+}
 .extra-right .menu,.documents_portfolio.menu{
 	padding:0;
 	position:relative;
