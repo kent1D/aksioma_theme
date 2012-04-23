@@ -642,14 +642,24 @@ h3.spip{
 /**
  * Calendrier
  */
+
 #calendar{
 	width:100%;
 	margin:8% 0;
 	font-size:.9em;
 	margin-bottom:0;
+	text-align:left;
+}
+#calendar table{
+	width:100%;
+	font-size:.9em;
+	margin-bottom:0;
 }
 
-#calendar caption{
+#calendar .calendar-container{
+	height:auto;
+}
+#calendar caption, #calendar .ui-datepicker-header{
 	background-color:#333;
 	padding:3px 0;
 	color:#fff;
@@ -671,23 +681,35 @@ h3.spip{
 }
 
 #calendar tr td{
-	padding:4px 1px;
+	padding:2px 1px;
+	line-height:1.3em;
 }
-#calendar td.occupe{
+#calendar tr td.occupe{
 	padding:1px;
 }
 
-#calendar td.occupe a{
+#calendar table td a{
+	border:1px solid #fff;
+	font-weight:normal;
+	cursor:default;
+	padding:3px 1px;
+}
+#calendar td.occupe a, #page .calendriermini .ui-state-highlight a{
 	padding:3px 0px;
 	background:#ededed;
 	display:block;
 	border:1px solid #d40000;
+	cursor:pointer;
 }
 
-#calendar td.occupe a:hover{
+#calendar td.occupe a:hover, #page .calendriermini .ui-state-highlight a:hover{
 	background-color:#d40000;
+	color:#fff;
 }
 
+#calendar .ui-datepicker-buttonpane{
+	display:none;
+}
 .calendar-today{
 	background:#efefef url(images/calendar-today_link.png) repeat-x bottom left;
 	margin-bottom:10px;
@@ -952,6 +974,7 @@ body.article_text_online{background-color:#F5F5F5}
 .dsjcycle,.dsjcycle > div{
 	max-width:100%;
 	min-width:100%;
+	overflow:visible;
 }
 
 .dsjcycle > div img{
