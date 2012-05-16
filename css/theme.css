@@ -319,7 +319,9 @@ div#conteneur #contenu{
 .introduction p{
 	margin:.2em 0;
 }
-div#conteneur .contenu-principal,div#conteneur .notes,div#conteneur .info_auteurs{
+div#conteneur .contenu-principal,
+div#conteneur .content-principal,
+div#conteneur .notes,div#conteneur .info_auteurs{
 	background-color:#999999;
 	padding:10px;
 	margin:0;
@@ -851,12 +853,14 @@ h3.spip{
 }
 #pied ul li{display:inline;padding:2px 5px;white-space:nowrap;}
 
-div#conteneur .contenu-principal{
+div#conteneur .contenu-principal,
+div#conteneur .content-principal{
 	padding:5px 0 5px 0;
 	/*background:#999 url(images/logo_top_rubrique) no-repeat top center;*/
 }
 
-.page_article div#conteneur .contenu-principal{
+.page_article div#conteneur .contenu-principal,
+.page_article div#conteneur .content-principal{
 	background-image:none;
 	padding:10px 0;	
 }
@@ -868,7 +872,8 @@ div#conteneur .contenu-principal{
 ul.liste_rubriques{padding:20px 10px 20px 40px;font-size:.9em;}
 ul.liste_rubriques li{padding:3px 0;}
 
-.rubrique_brochures .contenu-principal > h4{
+.rubrique_brochures .contenu-principal > h4,
+.rubrique_brochures .content-principal > h4{
 	margin-top:25px;
 	color:#fff;
 	margin-left:15px;
@@ -882,7 +887,8 @@ ul.liste_rubriques li{padding:3px 0;}
 	position:relative;
 	padding-top:0;
 }
-.page_rubrique.rubrique_brochures  div#conteneur .contenu-principal{
+.page_rubrique.rubrique_brochures  div#conteneur .contenu-principal,
+.page_rubrique.rubrique_brochures  div#conteneur .content-principal,{
 	background-image:none;
 	padding-top:0;
 }
@@ -918,7 +924,8 @@ table.spip th, table.spip td{border:none;}
 
 .article_text_online div#conteneur #contenu{width: 100%;}
 
-.article_text_online div#conteneur .contenu-principal{width:70%;margin-right:1%;float:left;}
+.article_text_online div#conteneur .contenu-principal,
+.article_text_online div#conteneur .content-principal{width:70%;margin-right:1%;float:left;}
 
 .article_text_online #hierarchie{margin:10px 0;}
 .article_text_online div#conteneur .extra-right{width: 29%;float:right}
@@ -933,6 +940,7 @@ body.article_text_online{background-color:#F5F5F5}
 .article_text_online .chapo p,.article_text_online .licence p{margin:.2em 0}
 
 .article_text_online div#conteneur .contenu-principal,
+.article_text_online div#conteneur .content-principal,
 .article_text_online div#conteneur .notes,
 .article_text_online div#conteneur .info_auteurs,
 .article_text_online div#conteneur .extra-right{background-color:#fff}
@@ -1017,7 +1025,6 @@ body a[hreflang]:after{
 	right:0;
 	left:auto;
 }
-
 
 /************************************************************************************
 smaller than 1024
@@ -1191,6 +1198,7 @@ smaller than 480
 	}
 	
 	.article_text_online div#conteneur .contenu-principal,
+	.article_text_online div#conteneur .content-principal,
 	.article_text_online div#conteneur .extra-right,
 	.article_text_online div#conteneur #pied{
 		float:none;
