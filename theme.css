@@ -1,78 +1,3 @@
-/* SPIP-STYLE                                                           */
-/* Cette feuille contient les styles associes au code genere par SPIP.  */
-/* Ces styles sont indispensables et doivent necessairement etre        */
-/* definis pour le bon fonctionnement de vos squelettes.                */
-
-
-/* Intertitre */
-h3.spip { /* text-align: center; margin-top: 2em; margin-bottom: 1.4em; font-size: 1.15em; font-weight: bold;*/ }
-hr.spip { margin: 2em auto; }
-
-/* Listes SPIP */
-ol.spip { list-style: decimal; }
-
-img{
-	vertical-align:bottom;
-}
-
-#conteneur .spip_code{
-	color:inherit;
-	font-family:inherit;
-}
-/* Citations, code et poesie */
-blockquote.spip { margin: 2em 0; padding-left: 1em; border-left: 0.30em solid; }
-blockquote.spip_poesie { margin: 2em 0; padding-left: 1em; border-left: 1px solid; font-family: Garamond, Georgia, Times, serif; font-size:120%; }
-blockquote.spip_poesie div { text-indent: -3em; margin-left: 3em; }
-
-.spip_code, .spip_cadre { font-family: Courier, "Courier New", monospace; color: #009; }
-.spip_cadre {background-color: #F4F8F8; border: 1px inset; }
-div.spip_code, .spip_cadre { margin-bottom: 1em;  }
-
-.spip_surligne { background: #FF6; }
-
-/* Tableaux */
-table.spip { margin-right: auto; margin-left: auto; margin-bottom: 1em; border-collapse: collapse; border-spacing: 0; line-height: normal; }
-table.spip caption { caption-side: top; /* bottom pas pris en compte par IE */ text-align: center; margin-right: auto; margin-left: auto; font-weight: bold; }
-table.spip tr.row_first { background: #FFC; }
-table.spip tr.row_odd { background: #EEE; }
-table.spip tr.row_even { background: #DDD; }
-table.spip th, table.spip td { padding: 0.20em 0.40em; text-align: left; border: 1px solid; }
-table.spip th { vertical-align: bottom; font-weight: bold; }
-table.spip td { vertical-align: top; }
-
-/* Logos, documents et images */
-img, .spip_logos { margin: 0; padding: 0; border: 0; }
-.spip_documents { text-align: center; line-height: normal; }
-.spip_documents p { margin: 0.10em; padding: 0; }
-.spip_documents_center { display: block;display: table; clear: both; margin: 1em auto; }
-.spip_documents_left { float: left; margin-right: 15px; margin-bottom: 5px; }
-.spip_documents_right { float: right; margin-left: 15px; margin-bottom: 5px; }
-.spip_doc_titre { margin-right: auto; margin-left: auto; font-weight: bold; font-size: 0.90em; }
-.spip_doc_descriptif { clear: both; margin-right: auto; margin-left: auto; font-size: 0.90em; }
-
-/* modeles par defaut */
-.spip_modele { float: right; display: block; padding: 1em; border: 1px solid; width: 180px; }
-
-/* Couleurs des liens de SPIP */
-a.spip_note {} /* liens vers notes de bas de page */
-a.spip_ancre {} /* liens internes a la page */
-a.spip_in { color: #900; } /* liens internes */
-a.spip_out { color: #009;  } /* liens sortants */
-a.spip_url { color: #009; } /* liens url sortants */
-a.spip_glossaire { color: #060;  } /* liens vers encyclopedie */
-a.spip_glossaire:hover { text-decoration: underline overline; }
-
-.on,.on a,a.on { font-weight: bold; } /* liens exposes */
-
-.small {font-size:90%;}
-
-/* Espaceur de blocs */
-.nettoyeur { clear: both; height: 0; margin: 0; padding: 0; border: 0; line-height: 1px; font-size: 1px; }
-
-/* Non visible a l'ecran */
-.invisible { position: absolute; top: -3000em; height: 1%; }
-
-
 body{
 	background-color:#666666;
 	font-family:Arial,Verdana;
@@ -100,7 +25,7 @@ h3 a, h5 a, .menu a{
 ul.spip,p,div.spip{
 	margin:.8em 0;
 	line-height:1.5em;
-	font-size:.9em;
+	font-size:.8em;
 }
 
 .texte a {
@@ -135,7 +60,7 @@ h3 a{
 	display:block;
 }
 #menu_lang{
-	padding:5px 0;
+	padding:5px;
 	text-align:right;
 	overflow:hidden;
 }
@@ -146,25 +71,11 @@ h3 a{
 	height:11px;
 	color:transparent;
 	float:right;
-	margin:2px;
-	background:url(images/flags/flags_sprite.png) no-repeat 0 0;
+	padding:2px;
+	margin-left:3px;
 }
 
-#menu_lang a.langue_en{
-	background-position:0 -11px;
-}
-#menu_lang a.langue_sl{
-	background-position:-16px -11px;
-}
-#menu_lang strong.langue_en{
-	background-position:0 0;
-}
-#menu_lang strong.langue_sl{
-	background-position:-16px 0;
-}
-
-
-label.en{
+#menu_lang a.langue_en, label.en{
 	background:url(images/flags/gb.png) no-repeat right 50%;
 }
 
@@ -172,12 +83,20 @@ label.en{
 	background:url(images/flags/it.png) no-repeat right 50%;
 }
 
-label.sl{
+#menu_lang a.langue_sl, label.sl{
 	background:url(images/flags/si.png) no-repeat right 50%;
+}
+
+#menu_lang strong.langue_en{
+	background:url(images/flags/gb_on.png) no-repeat right 50%;
 }
 
 #menu_lang strong.langue_it{
 	background:url(images/flags/it_on.png) no-repeat right 50%;
+}
+
+#menu_lang strong.langue_sl{
+	background:url(images/flags/si_on.png) no-repeat right 50%;
 }
 
 label.en, label.sl{
@@ -186,22 +105,30 @@ label.en, label.sl{
 div#page{
 	width:100%;
 }
-
 div#entete{
-	width:100%;
+	width:1250px;
+	height:150px;
 	overflow:hidden;
 	margin-bottom:10px;
 }
 
 div#entete .accueil{
-	width:100%;
+	width:854px;
+	height:150px;
+	
+	float:left;
+}
+div#entete .accueil_bis{
+	width:396px;
+	height:100px;
+	float:right;
 }
 
-div#entete img{width:100%;height:auto;}
-
-div#entete .dsjcycle{position:absolute;display:none;}
-
-div#entete .dsjcycle a{width:100%;display:block;}
+div#entete {width:100%}
+div#entete .accueil{width:100%;}
+div#entete .accueil_bis {width:0}
+div#entete img{width:100%;height:150px;}
+div#entete .dsjcycle a{width:100%;height:150px;display:block;}
 
 div#conteneur{
 	width:100%;
@@ -280,20 +207,14 @@ div#conteneur #contenu{
 #contenu .hentry{
 	overflow:auto;
 }
-.extra-left > a .spip_logos{
-	width:100%;
-	height:auto;
-	
-}
+
 #contenu .hentry .logo{
-	width:38%;
-	height:auto;
+	width:39%;
 	display:inline-block;
 	vertical-align:top;
 }
 
-.page_rubrique #contenu .hentry .logo,
-.page_recherche #contenu .hentry .logo{
+.page_rubrique #contenu .hentry .logo{
 	width:17%;
 	margin:0;
 }
@@ -310,10 +231,9 @@ div#conteneur #contenu{
 	width:56%;
 }
 
-.page_rubrique #contenu .hentry .entry,
-.page_recherche #contenu .hentry .entry{
+.page_rubrique #contenu .hentry .entry{
 	margin-left:0;
-	margin : 0 0 0 2%;
+	margin : 0 2%;
 	font-size:.9em;
 	width:78%;
 	vertical-align:top;
@@ -323,9 +243,7 @@ div#conteneur #contenu{
 .introduction p{
 	margin:.2em 0;
 }
-div#conteneur .contenu-principal,
-div#conteneur .content-principal,
-div#conteneur .notes,div#conteneur .info_auteurs{
+div#conteneur .contenu-principal,div#conteneur .notes,div#conteneur .info_auteurs{
 	background-color:#999999;
 	padding:10px;
 	margin:0;
@@ -359,13 +277,9 @@ div#conteneur #extra{
 }
 
 .page_agenda #extra .extra-left ul li{
-	background:#999;
-	border:none;
-	margin:2px 0;
 	font-size:.9em;
-	padding:2px;
+	padding:2px 0;
 	font-weight:normal;
-	
 }
 #extra .extra-right{
 	float:left;
@@ -374,9 +288,6 @@ div#conteneur #extra{
 	background-color:#333333;
 }
 
-#extra h3 a{
-	color:#ccc;
-}
 ul.menu-liste.social{
 	overflow:hidden;
 	background-color:#666;
@@ -384,15 +295,16 @@ ul.menu-liste.social{
 
 ul.social li:last-child{
 	padding-left:41px;
-	background: transparent url(images/social/social_icons_sprite.png) no-repeat bottom left;
+	background-image:url(images/back_social_corner.png);
+	background-repeat:none;
+	background-position:bottom left;
 }
 .menu-liste.social li{
 	float:right;
-	background:#333;
 }
 .menu-liste.social li a{
 	display:block;
-	margin:8px 3px;
+	padding:8px 3px;
 	height:30px;
 	background-color:#333;
 	color:#fff;
@@ -408,33 +320,30 @@ ul.social li:last-child{
 	width:30px;
 	color:transparent;
 	overflow:hidden;
-	height:30px;
-	display:block;
-	background:#333 url(images/social/social_icons_sprite.png) no-repeat;
 }
 
-.menu-liste.social li.icone_vimeo a{
-	background-position:-128px 0;
+.icone_vimeo a{
+	background:#333 url(images/social/vimeo.png) no-repeat center center;
 }
 
-.menu-liste.social li.icone_youtube a{
-	background-position:-159px 0;
+.icone_youtube a{
+	background:#333 url(images/social/youtube.png) no-repeat center center;
 }
 
-.menu-liste.social li.icone_fb a{
-	background-position:0 0;
+.icone_fb a{
+	background:#333 url(images/social/facebook.png) no-repeat center center;
 }
 
-.menu-liste.social li.icone_twitter a{
-	background-position:-96px 0;
+.icone_twitter a{
+	background:#333 url(images/social/twitter.png) no-repeat center center;
 }
 
-.menu-liste.social li.icone_rss a{
-	background-position:-66px 0;
+.icone_rss a{
+	background:#333 url(images/social/rss.png) no-repeat center center;
 }
 
-.menu-liste.social li.icone_flickr a{
-	background-position:-33px 0;
+.icone_flickr a{
+	background:#333 url(images/social/flickr.png) no-repeat center center;
 }
 .extra-right h4{
 	margin-top:10px;
@@ -453,8 +362,7 @@ ul.social li:last-child{
 
 #extra h3,.article_text_online .extra-right h3{
 	padding-left:24px;
-	background:#333 url(images/fle_droite.gif) no-repeat 2px center;
-	color:#FFF;
+	background:#999 url(images/fle_droite.gif) no-repeat 2px center;
 }
 
 #navigation > p{
@@ -507,7 +415,7 @@ ul.social li:last-child{
 	background-color:transparent;
 	color:#fff;
 	font-weight:normal;
-	font-size:.9em;
+	font-size:.8em;
 }
 
 #navigation ul.menu-liste li a:hover, #navigation ul.menu-liste li a.on{
@@ -529,9 +437,6 @@ ul.social li:last-child{
     padding: 2%;
 }
 
-.page_sommaire #contenu ul.liste-items > li p:last-child{
-	margin-bottom:0;
-}
 .formulaire_spip{
 	margin-top:10px;
 }
@@ -557,12 +462,8 @@ ul.social li:last-child{
 #formulaire_recherche{
 	margin:0;
 	background:#ccc;
-	padding:2px 1%;
-	width:98%;
-}
-
-.rubrique_projet_normal #formulaire_recherche{
-	padding:2px;
+	padding:2px 0;
+	width:100%;
 }
 
 #formulaire_recherche label{ 
@@ -660,24 +561,14 @@ h3.spip{
 /**
  * Calendrier
  */
-
 #calendar{
 	width:100%;
 	margin:8% 0;
-	font-size:.9em;
-	margin-bottom:0;
-	text-align:left;
-}
-#calendar table{
-	width:100%;
-	font-size:.9em;
+	font-size:.8em;
 	margin-bottom:0;
 }
 
-#calendar .calendar-container{
-	height:auto;
-}
-#calendar caption, #calendar .ui-datepicker-header{
+#calendar caption{
 	background-color:#333;
 	padding:3px 0;
 	color:#fff;
@@ -699,35 +590,23 @@ h3.spip{
 }
 
 #calendar tr td{
-	padding:2px 1px;
-	line-height:1.3em;
+	padding:4px 1px;
 }
-#calendar tr td.occupe{
+#calendar td.occupe{
 	padding:1px;
 }
 
-#calendar table td a{
-	border:1px solid #fff;
-	font-weight:normal;
-	cursor:default;
-	padding:3px 1px;
-}
-#calendar td.occupe a, #page .calendriermini .ui-state-highlight a{
+#calendar td.occupe a{
 	padding:3px 0px;
 	background:#ededed;
 	display:block;
 	border:1px solid #d40000;
-	cursor:pointer;
 }
 
-#calendar td.occupe a:hover, #page .calendriermini .ui-state-highlight a:hover{
+#calendar td.occupe a:hover{
 	background-color:#d40000;
-	color:#fff;
 }
 
-#calendar .ui-datepicker-buttonpane{
-	display:none;
-}
 .calendar-today{
 	background:#efefef url(images/calendar-today_link.png) repeat-x bottom left;
 	margin-bottom:10px;
@@ -767,21 +646,14 @@ h3.spip{
 	list-style: none;
 	display: block;
 }
-
-.caroufredsel_wrapper li,
-.page_rubrique #extra .caroufredsel_wrapper ul li{
+.caroufredsel_wrapper li,.page_rubrique #extra .caroufredsel_wrapper ul li {
+	color: #666;
+	text-align: center;
+	padding: 0;
+	margin: 6px;
+	font-size:.8em;
 	display: block;
 	float: left;
-}
- 
-.rubrique_brochures #contenu ul.liste li,
-.extra-right ul.liste li{
-	padding:6px;
-}
-
-.rubrique_brochures #contenu ul.liste li a,
-.extra-right ul.liste li a{
-	display:block;
 }
 .extra-right .menu,.documents_portfolio.menu{
 	padding:0;
@@ -807,9 +679,6 @@ h3.spip{
 }
 .page_rubrique #contenu .menu .prev,.page_rubrique #contenu .menu .next{
 	top:120px;
-}
-.extra-right .exergue_media{
-	background:#000;
 }
 .extra-right .exergue_media p,.extra-right .exergue_pdf{
 	padding : .5em;
@@ -840,6 +709,7 @@ h3.spip{
 	background:url(images/fle_carousel_sprite_big.png) no-repeat -255px -71px;
 }
 
+
 .spip_documents{
 	text-align:left;
 }
@@ -851,6 +721,24 @@ h3.spip{
 	margin-left:0px;
 }
 
+
+p.pagination{
+	text-align:center;
+}
+
+p.pagination .sep{display:none;}
+
+.pagination strong.on, .pagination a {
+	padding: 5px 10px;
+	line-height: 2em;
+	border: 1px solid #000;
+	background-color:#999;
+	font-size:.9em;
+}
+.pagination strong.on {
+	background: #fff;
+}
+
 #hierarchie{
 	margin:10px -10px;
 }
@@ -860,10 +748,10 @@ h3.spip{
 }
 
 #pied{
-	font-size:.9em;
+	font-size:.8em;
 	color:#fff;
 	background-color:#000;
-	padding:3px 1%;
+	padding:3px;
 }
 
 #pied a{
@@ -872,14 +760,12 @@ h3.spip{
 }
 #pied ul li{display:inline;padding:2px 5px;white-space:nowrap;}
 
-div#conteneur .contenu-principal,
-div#conteneur .content-principal{
+div#conteneur .contenu-principal{
 	padding:5px 0 5px 0;
 	/*background:#999 url(images/logo_top_rubrique) no-repeat top center;*/
 }
 
-.page_article div#conteneur .contenu-principal,
-.page_article div#conteneur .content-principal{
+.page_article div#conteneur .contenu-principal{
 	background-image:none;
 	padding:10px 0;	
 }
@@ -891,8 +777,7 @@ div#conteneur .content-principal{
 ul.liste_rubriques{padding:20px 10px 20px 40px;font-size:.9em;}
 ul.liste_rubriques li{padding:3px 0;}
 
-.rubrique_brochures .contenu-principal > h4,
-.rubrique_brochures .content-principal > h4{
+.rubrique_brochures .contenu-principal > h4{
 	margin-top:25px;
 	color:#fff;
 	margin-left:15px;
@@ -906,36 +791,44 @@ ul.liste_rubriques li{padding:3px 0;}
 	position:relative;
 	padding-top:0;
 }
-.page_rubrique.rubrique_brochures  div#conteneur .contenu-principal,
-.page_rubrique.rubrique_brochures  div#conteneur .content-principal,{
+.page_rubrique.rubrique_brochures  div#conteneur .contenu-principal{
 	background-image:none;
 	padding-top:0;
 }
 
 .rubrique_brochures .caroufredsel_wrapper{
-	margin:0 60px;
+	margin: 10px 56px;
+	margin:2% 60px;
 	width:100%;
 }
 .rubrique_brochures .caroufredsel_wrapper li{
 	text-align:left;
 	color:#000;
+	margin:6px;
 }
 
+.caroufredsel_wrapper li img{
+	vertical-align:bottom;
+}
+.rubrique_brochures .caroufredsel_wrapper li p{
+	margin:.2em 0;
+}
+
+.rubrique_brochures .caroufredsel_wrapper li a {
+	
+}
 .rubrique_brochures .menu .prev,.rubrique_brochures .menu .next {top:140px};
 
 table.spip th, table.spip td {
 	border:non;
 }
 
-table.spip{width:100%;border:none;font-size: .9em;}
+table.spip{width:100%;border:none;font-size: .8em;}
 
 table.spip tr.row_even,table.spip tr.row_odd{border:none;background:transparent;}
 
 table.spip th, table.spip td{border:none;}
 
-/**
- * 	Composition article texte
- */
 .page_article.article_text_online div#conteneur #navigation{
 	display:none;
 }
@@ -943,11 +836,10 @@ table.spip th, table.spip td{border:none;}
 
 .article_text_online div#conteneur #contenu{width: 100%;}
 
-.article_text_online div#conteneur .contenu-principal,
-.article_text_online div#conteneur .content-principal{width:70%;margin-right:1%;float:left;}
+.article_text_online div#conteneur .contenu-principal{width:70%;margin-right:1%;float:left;}
 
 .article_text_online #hierarchie{margin:10px 0;}
-.article_text_online div#conteneur .extra-right{width: 29%;float:right}
+.article_text_online div#conteneur .extra-right{width: 29%;float:left}
 .article_text_online div#conteneur .extra-right p,.article_text_online div#conteneur .extra-right ul{font-size:.85em;}
 body.article_text_online{background-color:#F5F5F5}
 
@@ -959,15 +851,18 @@ body.article_text_online{background-color:#F5F5F5}
 .article_text_online .chapo p,.article_text_online .licence p{margin:.2em 0}
 
 .article_text_online div#conteneur .contenu-principal,
-.article_text_online div#conteneur .content-principal,
 .article_text_online div#conteneur .notes,
 .article_text_online div#conteneur .info_auteurs,
-.article_text_online div#conteneur .extra-right{background-color:#fff}
+.article_text_online div#conteneur .extra-right,
+.article_text_online .icone_fb,
+.article_text_online .icone_rss,
+.article_text_online .icone_twitter,
+.article_text_online ul.menu-liste.social{background-color:#fff}
 
 .article_text_online p a{color:#d40000}
 .article_text_online a:hover{color:#CCC}
 
-.article_text_online #pied{width:68%;float:left;}
+.article_text_online #pied{width: 80%;clear:both;}
 
 .article_text_online h3,.article_text_online h3.spip,.article_text_online .extra-right h3{background-color:#ccc;}
 
@@ -997,17 +892,6 @@ body.article_text_online{background-color:#F5F5F5}
 	padding-left: 24px;
 }
 
-
-.dsjcycle,.dsjcycle > div{
-	max-width:100%;
-	min-width:100%;
-	overflow:visible;
-}
-
-.dsjcycle > div img{
-	width:100%;
-	height:auto;
-}
 .dsjcycle div:nth-child(1n+2){
 	display:none;
 }
@@ -1044,6 +928,7 @@ body a[hreflang]:after{
 	right:0;
 	left:auto;
 }
+
 
 /************************************************************************************
 smaller than 1024
@@ -1107,7 +992,7 @@ smaller than 800
 	}
 	div#conteneur #contenu{
 		margin-left:2%;
-		width: 63%;
+		width: 68%;
 	}
 	
 	.rubrique_brochures #conteneur #contenu{
@@ -1118,7 +1003,8 @@ smaller than 800
 		display:none;
 	}
 	div#conteneur #navigation{
-		width:35%; 
+		width:25%;
+		margin-left:2%; 
 	}
 	
 	div#conteneur #extra{
@@ -1155,6 +1041,13 @@ smaller than 480
 @media screen and (max-width: 480px) {
 	div#page { position: relative; width: 100%; margin: 0; text-align: left;box-shadow:none; }
 	
+	div#entete .accueil{
+		width:100%;
+	}
+	
+	div#entete .accueil_bis{
+		display:none;
+	}
 	div#conteneur #contenu{
 		margin-left:0%;
 		width: 100%;
@@ -1179,17 +1072,6 @@ smaller than 480
 		display:none;
 	}
 	
-	#navigation ul.menu-liste li ul.menu-items,
-	#navigation .navigation_extra,
-	#navigation .submenu_left{
-		position:absolute;
-	}
-	
-	#navigation ul.menu-liste li.on ul.menu-items{
-		visibility:visible;
-		display:block;
-		position:relative;
-	}
 	div#conteneur #extra{
 		display:none;
 	}
@@ -1215,14 +1097,115 @@ smaller than 480
 	#pied ul li{
 		display:block;
 	}
-	
-	.article_text_online div#conteneur .contenu-principal,
-	.article_text_online div#conteneur .content-principal,
-	.article_text_online div#conteneur .extra-right,
-	.article_text_online div#conteneur #pied{
-		float:none;
-		clear:both;
-		width:98%;
-	}
-	ul.social{display:none;}
+
 }
+
+
+/*  ------------------------------------------
+/*  Habillage des formulaires
+/*  ------------------------------------------ */
+input, select, textarea { font-size: 100%; font-family: inherit; }
+
+
+/* Structure generale des formulaires
+----------------------------------------------- */
+.formulaire_spip { clear: both; margin-bottom: 2em; padding: 0; border: 0; text-align: left; font-size: 1em; }
+.formulaire_spip form { margin: 0; padding: 0; } /* Bug IE/Win */
+
+/* Fieldset */
+.formulaire_spip fieldset { clear: both; margin: 0 0 1em 0; border: 0; }
+.formulaire_spip fieldset legend { margin: 0; padding: 0; font-size: 1.05em; font-weight: bold; background-color: #fff; color: #333; } /* Preciser la couleur des legend et du fond pour IE/Win */
+.formulaire_spip fieldset fieldset { margin-top: 1em; }
+.formulaire_spip fieldset fieldset legend { font-size: 1em; font-weight: normal; }
+
+/* Explications */
+.formulaire_spip .explication { margin: 0.50em 0; color: #444; }
+
+/* Lignes */
+.formulaire_spip ul { margin: 0; padding: 0; list-style: none; }
+.formulaire_spip ul li { clear: both; margin: 0; padding: 0.50em 0; }
+
+/* Labels */
+.formulaire_spip label { display: block; text-align: left; color: #444; font-weight: bold; /* pour IE/Win */ position: relative;  }
+.formulaire_spip li p { margin-top: 0; margin-bottom: 0; }
+
+.formulaire_spip .choix label{display:inline;font-weight:normal;}
+.formulaire_spip .choix input.radio,
+.formulaire_spip .choix input.checkbox {width:auto;}
+
+
+/* Champs de saisie */
+.formulaire_spip input.text { width: 15em; }
+.formulaire_spip textarea { width: 99%;}
+.formulaire_spip select { width: 99%; }
+
+/* Boutons */
+.formulaire_spip .boutons { clear: both; margin: 0; padding: 0; text-align: right; }
+.formulaire_spip .boutons input { margin-left: 1em; }
+.formulaire_spip .boutons input, input.submit {}
+
+
+/* Reponses, previsu et erreurs
+----------------------------------------------- */
+
+/* Champs obligatoires */
+.formulaire_spip li.obligatoire {}
+.formulaire_spip li.obligatoire label {}
+
+/* Previsualisation du message */
+.formulaire_spip fieldset.previsu { margin-bottom: 2em; padding: 1em; border: 2px dashed #F57900; }
+.formulaire_spip fieldset.previsu legend { padding: 0 0.50em; font-weight: bold; color: #F57900; }
+.formulaire_spip fieldset.previsu li { padding: 3px; border: none; }
+.formulaire_spip fieldset.previsu p { margin: 1em 0; } 
+
+/* Reponse du formulaire */
+.reponse_formulaire { font-weight: bold; color: #e86519; font-size: 1.20em; }
+fieldset.reponse_formulaire { border-color: #e86519; font-weight: normal; }
+fieldset.reponse_formulaire.reponse_formulaire legend { color: #F57900; } /* Preciser la couleur des legend et du fond pour IE/Win */
+
+/* * Erreurs */
+.formulaire_spip li.erreur .erreur_message { display: block; color: #C30; font-weight: bold; }
+.formulaire_spip li.erreur input.text, .formulaire_spip li.erreur textarea { background-color: #FCC; border-style: solid; border-color: #C30; }
+.reponse_formulaire_erreur { margin: 0; color: #C30; font-weight: bold; }
+
+/* * OK */
+.reponse_formulaire_ok { margin: 0; color: #53AD20; font-weight: bold; }
+
+
+/* Variantes et cas particuliers
+----------------------------------------------- */
+
+/* Barre de raccourcis typographiques */
+table.spip_barre { width: 100%; }
+table.spip_barre a img { background: #FDA; padding: 3px; border: 1px outset #CC9; }
+table.spip_barre a:focus img,
+table.spip_barre a:hover img,
+table.spip_barre a:active img { background: #FFF; border: 1px solid #CC9; }
+table.spip_barre input.barre { width: 99%; background: transparent; border: 0; color:inherit; }
+
+/* Formulaire de forum */
+.formulaire_forum .saisie_titre input.text, .formulaire_forum .saisie_titre textarea { width: 98%; }
+
+/* Selection des langues */
+.formulaire_menu_lang { margin: 0; padding: 0; background: none; }
+
+/* Formulaires de recherche (site / petitions) */
+.formulaire_recherche { margin: 0; padding: 0; background: none; }
+.formulaire_recherche * { display: inline; vertical-align: middle; }
+.formulaire_recherche label {}
+.formulaire_recherche input.text { width: 10em; padding-left: 25px; background: #FFF; }
+.formulaire_recherche input.submit {}
+
+.spip_surligne {} /* Cf.: spip_style.css */
+
+/* Choix des mots-clefs */
+ul.choix_mots { display: block; margin: 0; padding: 0; list-style: none; }
+ul.choix_mots li { clear: none; float: left; display: block; width: 30%; padding: 1%; }
+ul.choix_mots li label { display: inline; font-weight: normal; }
+
+.formulaire_spip .bugajaxie { display: none; } /* Bug IE/Win */
+
+/* Formulaire de login dans une page */
+.formulaire_login ul li {clear:left;}
+.formulaire_login .editer_password .details {display:block;}
+.formulaire_login #spip_logo_auteur {float:right;}
