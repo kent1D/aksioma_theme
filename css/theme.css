@@ -82,7 +82,6 @@ body{
 
 a, a.spip_out{
 	color:#000;
-	background:transparent;
 	padding:0;
 	text-decoration:none;
 }
@@ -386,64 +385,15 @@ div#conteneur #extra{
 	color:#ccc;
 }
 ul.menu-liste.social{
-	overflow:hidden;
-	background:none;
 	position:absolute;
 	right:10px;
-	bottom:0px;
-	z-index:10;
+	bottom:10px;
 }
 
-ul.social li:last-child{
-}
 .menu-liste.social li{
 	float:right;
 }
-.menu-liste.social li a{
-	display:block;
-	margin:8px 3px;
-	height:30px;
-	color:#fff;
-}
 
-.menu-liste.social li.icone a,
-.menu-liste.social li.icone_fb a,
-.menu-liste.social li.icone_twitter a,
-.menu-liste.social li.icone_rss a,
-.menu-liste.social li.icone_flickr a,
-.menu-liste.social li.icone_vimeo a,
-.menu-liste.social li.icone_youtube a{
-	width:30px;
-	height:30px;
-	color:transparent;
-	overflow:hidden;
-	display:block;
-	background: url(images/social/social_icons_sprite.png) no-repeat;
-}
-
-.menu-liste.social li.icone_vimeo a{
-	background-position:-128px 0;
-}
-
-.menu-liste.social li.icone_youtube a{
-	background-position:-159px 0;
-}
-
-.menu-liste.social li.icone_fb a{
-	background-position:0 0;
-}
-
-.menu-liste.social li.icone_twitter a{
-	background-position:-96px 0;
-}
-
-.menu-liste.social li.icone_rss a{
-	background-position:-66px 0;
-}
-
-.menu-liste.social li.icone_flickr a{
-	background-position:-33px 0;
-}
 .extra-right h4,#conteneur .extra-right h2{
 	margin-top:10px;
 	background-color:transparent;
@@ -1129,12 +1079,9 @@ smaller than 800
 	}
 	
 	.rubrique_brochures #conteneur #contenu{
-		width:71%;
+		width:62%;
 	}
 	
-	.rubrique_brochures #conteneur #contenu .exergue_pdf{
-		display:none;
-	}
 	div#conteneur #navigation{
 		width:35%; 
 	}
@@ -1183,6 +1130,9 @@ smaller than 480
 		width:100%;
 	}
 	
+	.rubrique_brochures #conteneur #contenu .exergue_pdf{
+		display:none;
+	}
 	div#conteneur #navigation{
 		width:100%;
 		margin-left:0%;
