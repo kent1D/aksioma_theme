@@ -714,8 +714,8 @@ h3.spip{
 	text-align:left;
 }
 
-.spip_documents_center{
-	margin-left:-10px;
+.spip_documents img{
+	max-width:100%;
 }
 .spip_documents dd,.spip_documents dt{
 	margin-left:0px;
