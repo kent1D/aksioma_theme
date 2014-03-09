@@ -2,8 +2,8 @@
 	<nom>Aksioma</nom>
 	<auteur>kent1 (kent1@arscenic.info)</auteur>
 	<licence><a href='http://creativecommons.org/licenses/by/2.5/' rel='licence'>Creative Commons Attribution 2.5 License</a></licence>
-	<version>1.2</version>
- 	<description>Th&egrave;me Aksioma for [Aksioma.org->www.arksioma.org]</description>
+	<version>1.3</version>
+ 	<description>Theme Aksioma for [Aksioma.org->www.arksioma.org]</description>
  	<icon>icon_theme_defaut.jpg</icon>
  	<etat>stable</etat>
  	<prefix>theme</prefix>
