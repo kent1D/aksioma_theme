@@ -402,7 +402,7 @@ ul.menu-liste.social{
 	padding-left:0;
 }
 
-.extra-right h4 a,#conteneur .extra-right h2 a{color:#fff;}
+.extra-right h4 a{color:#fff;}
 .extra-right > div{
 	margin-bottom:10px;
 }
@@ -475,6 +475,16 @@ ul.menu-liste.social{
 	color:#fff;
 }
 
+#navigation ul{
+	-webkit-transition: 1s ease;
+	-moz-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+}
+.nav-hidden{
+	height:0px;
+	overflow:hidden;
+}
 .menu{
 	padding-top:1.5em;
 }
@@ -572,6 +582,12 @@ h2{
 	clear:both;
 }
 
+.rubrique_brochures #conteneur h2{
+	color:inherit;
+	padding:2px 0;
+	margin:0;
+	background: #999;
+}
 .focus{
 	margin-top:1.5em;
 	background-color:#cccccc;
@@ -1013,6 +1029,9 @@ body a[hreflang]:after{
 	left:auto;
 }
 
+iframe .player .video-wrapper .video,.player .video-wrapper,iframe .player .video-wrapper{
+	background-color:#ccc;
+}
 /************************************************************************************
 smaller than 1024
 *************************************************************************************/
