@@ -384,6 +384,10 @@ div#conteneur #extra{
 .extra_right h3 a{
 	color:#ccc;
 }
+
+.infos_sup .spip_documents{
+	display:block;
+}
 ul.menu-liste.social{
 	position:absolute;
 	right:10px;
@@ -444,11 +448,11 @@ ul.menu-liste.social{
 #navigation ul.menu-liste li ul{
 	font-size:.85em;
 }
-#navigation ul.menu-liste li.on > a,#navigation ul.menu-liste li strong.on,#extra .extra-left ul li strong.on{
+#navigation ul.menu-liste li.on > a,#navigation ul.menu-liste li strong.on,.page_agenda #extra .extra-left ul li strong.on{
 	color:#666;
 	background-color:#ccc;
 }
-#navigation ul.menu-liste li a,#navigation ul.menu-liste li strong,#extra .extra-left ul li a, #extra .extra-left ul li strong{
+#navigation ul.menu-liste li a,#navigation ul.menu-liste li strong,.page_agenda #extra .extra-left ul li a,.page_agenda #extra .extra-left ul li strong{
 	display:block;
 	background-color:#999999;
 	padding:2px;
@@ -566,9 +570,12 @@ h2{
 	color:#fff;
 }
 
-#conteneur h1,#conteneur h1 a{
+#conteneur h1,#conteneur h1 a,#conteneur .liste h2,#conteneur .liste h2 a,
+#conteneur .extra-left h2{
 	background:#333333;
 	color:#fff;
+	padding-left:0;
+	margin-top:0;
 }
 
 #conteneur h1 a:hover{
@@ -758,7 +765,6 @@ h3.spip{
 	padding:6px;
 }
 
-.rubrique_brochures #contenu ul.liste li a,
 .extra-right ul.liste li a{
 	display:block;
 }
@@ -937,7 +943,7 @@ body.article_text_online{background-color:#F5F5F5}
 
 .article_text_online .subcartouche{overflow:auto;width:100%;}
 .article_text_online .cartouche{width: 48%;margin:10px;float:left}
-.article_text_online #conteneur h1{color:#000;margin:0;}
+.article_text_online #conteneur h1{margin:0;}
 .article_text_online .chapo,.article_text_online .licence {float:left;width:40%;font-size:.85em;padding:0;margin:0 5px;}
 .article_text_online .chapo .spip_logos {float:left; margin: 0 10px 10px 0}
 .article_text_online .chapo p,.article_text_online .licence p{margin:.2em 0}
