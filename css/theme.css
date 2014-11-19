@@ -588,7 +588,9 @@ h2{
 	margin-top:3%;
 	clear:both;
 }
-
+.rubrique_brochures #conteneur .liste h2 a{
+	background:none;
+}
 .rubrique_brochures #conteneur h2{
 	color:inherit;
 	padding:2px 0;
