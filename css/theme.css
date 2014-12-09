@@ -590,6 +590,12 @@ h2{
 }
 .rubrique_brochures #conteneur .liste h2 a{
 	background:none;
+	color:#000;
+}
+
+.rubrique_brochures #conteneur .liste h2 a:hover{
+	background:none;
+	color:#fff;
 }
 .rubrique_brochures #conteneur h2{
 	color:inherit;
@@ -597,6 +603,7 @@ h2{
 	margin:0;
 	background: #999;
 }
+
 .focus{
 	margin-top:1.5em;
 	background-color:#cccccc;
