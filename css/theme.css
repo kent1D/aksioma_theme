@@ -1161,6 +1161,7 @@ smaller than 480
 	div#conteneur #contenu{
 		margin-left:0%;
 		width: 100%;
+		order:3;
 	}
 	
 	.rubrique_brochures #conteneur #contenu{
@@ -1176,6 +1177,10 @@ smaller than 480
 		margin-left:0%;
 	}
 	
+	#conteneur {
+		display:flex;
+		flex-direction: column;
+	}
 	div#conteneur #navigation #calendar,
 	div#conteneur #navigation #formulaire_recherche,
 	#navigation ul.menu-liste li ul.menu-items,
@@ -1197,9 +1202,16 @@ smaller than 480
 		position:relative;
 	}
 	div#conteneur #extra{
-		display:none;
+		display:block;
+		order:2;
+		width:100%;
+		margin-left:0;
 	}
+
 	#extra .extra-left{
+		display:block;
+	}
+	#extra .extra-right {
 		display:none;
 	}
 	.page_agenda #extra .extra-left{
