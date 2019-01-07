@@ -485,6 +485,10 @@ ul.menu-liste.social{
 	-o-transition: 1s ease;
 	transition: 1s ease;
 }
+
+#navigation ul.submenu_left li {
+	padding:.5rem 0 .25rem 0; 
+}
 .nav-hidden{
 	height:0px;
 	overflow:hidden;
