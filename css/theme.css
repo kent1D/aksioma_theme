@@ -648,7 +648,7 @@ h3.spip{
 .crayon-html{
 	padding:5px;
 	background-color:#fff;
-	border:1px #solid #ccc;
+	border:1px solid #ccc;
 	font-size:.9em;
 }
 
@@ -667,6 +667,7 @@ h3.spip{
 	margin-bottom:0;
 	text-align:left;
 }
+
 #calendar table{
 	width:100%;
 	font-size:.9em;
@@ -1180,6 +1181,25 @@ smaller than 480
 	#conteneur {
 		display:flex;
 		flex-direction: column;
+	}
+	#extra .hentry .logo{
+		width:38%;
+		height:auto;
+		display:inline-block;
+		vertical-align:top;
+	}
+
+	#extra .hentry .entry {
+		margin-left: 0;
+		margin: 0 2%;
+		display: inline-block;
+		vertical-align: top;
+		width: 56%;
+		padding:0;
+	}
+	.page_sommaire #extra ul.liste-items > li {
+		margin: 0 0 2%;
+		padding: 2%;
 	}
 	div#conteneur #navigation #calendar,
 	div#conteneur #navigation #formulaire_recherche,
